@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Enter data</h2>
+    <form action="action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label for="phone">Enter a phone number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="089-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        <label for="email">Enter an email:</label><br>
+        <input type="email" id="email" name="email" autocomplete="off"><br>
+
+        <input type="checkbox" id="role1" name="role1" value="Teacher">
+        <label for="role1"> Teacher</label>
+        <input type="checkbox" id="role2" name="role2" value="Student">
+        <label for="role2"> Student</label><br>
+
+        <h4>Choose your language</h4>
+        <input type="radio" id="java" name="stadied_language" value="java">
+        <label for="java">Java</label><br>
+        <input type="radio" id="javascript" name="stadied_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+
+        <h4>Send CV and cover letter</h4>
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Already registered? Sign in!</h2>
+    <form action="action_page.php">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required>
+        <input type="button" onclick="alert('Use either your email or phone number!')" value="Need help?"><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

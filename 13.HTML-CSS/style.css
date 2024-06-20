@@ -1,0 +1,160 @@
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    padding: 40px;
+    border-radius: 60px;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+a {
+    font-size: 20px;
+}
+
+.heading {
+    border-radius: 40px;
+    background-color: rgb(250, 245, 215);
+}
+
+.paragraphs {
+    border-radius: 10px;
+    background-color: rgb(250, 245, 215);
+}
+
+#top {
+    background-color: rgb(250, 245, 215);
+    border-radius: 60px;
+}
+
+#heading1 {
+    font-style: oblique;
+    padding-left: 40px;
+}
+
+* {
+    background-color: bisque;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+.pfont1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pfont2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pfont3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.psize1 {
+    font-size: large;
+}
+
+.psize2 {
+    font-size: medium;
+}
+
+.psize3 {
+    font-size: small;
+}
+
+.pstyle1 {
+    font-style: italic;
+}
+
+.pstyle2 {
+    font-style: normal;
+}
+
+.pstyle3 {
+    font-style: oblique;
+}
+
+.palignment1 {
+    text-align: center;
+}
+
+.palignment2 {
+    text-align: justify;
+}
+
+.palignment3 {
+    text-align: right;
+}
+
+.pline1 {
+    line-height: 15px;
+}
+
+.pline2 {
+    line-height: 20px;
+}
+
+.pline3 {
+    line-height: 40px;
+}
+
+.top {
+    background-color: rgb(255, 208, 0);
+}
+
+.pars {
+    background-color: cadetblue;
+}
+
+.ptext1 {
+    color: brown;
+}
+
+.ptext2 {
+    color: blue;
+}
+
+.ptext3 {
+    color: blueviolet;
+}
+
+.pborder1 {
+    border-style: solid;
+    border-color: blue;
+}
+
+.pborder2 {
+    border-style: dashed;
+    border-color: blueviolet;
+}
+
+.pborder3 {
+    border-style: dotted;
+    border-color: brown;
+}
+
+#image-back {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh96OsHao0tpMl3Q_rU7ng9RD70QvUBgaH3w&s);
+}
+
+.back-size {
+    background-size: 30%;
+}
+
+.link:hover {
+    text-decoration: solid;
+    color: rgb(165, 91, 42);
+}
+
+.first-line::first-line {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
