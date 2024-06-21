@@ -633,22 +633,22 @@ Write a program that reads a positive integer n and draws a square frame of size
 Input |Output
 ---|---
 f(3) |+ - +
-||\| - \|
+||&nbsp;\|&nbsp; - &nbsp;\|
 ||+ - +
 f(4) |+ - - +
-||\| - - \|
-||\| - - \|
+||&nbsp;\|&nbsp; - - &nbsp;\|
+||&nbsp;\|&nbsp; - - &nbsp;\|
 ||+ - - +
 f(5)|+ - - - +
-||\| - - - \|
-||\| - - - \|
-||\| - - - \|
+||&nbsp;\|&nbsp; - - - &nbsp;\|
+||&nbsp;\|&nbsp; - - - &nbsp;\|
+||&nbsp;\|&nbsp; - - - &nbsp;\|
 ||+ - - - +
 f(6) |+ - - - - +
-||\| - - - - \|
-||\| - - - - \|
-||\| - - - - \|
-||\| - - - - \|
+||&nbsp;\|&nbsp; - - - - &nbsp;\|
+||&nbsp;\|&nbsp; - - - - &nbsp;\|
+||&nbsp;\|&nbsp; - - - - &nbsp;\|
+||&nbsp;\|&nbsp; - - - - &nbsp;\|
 ||+ - - - - +
 
 ### 35. Christmas Tree
@@ -657,19 +657,19 @@ Write a program that receives a number n (1 <= n <= 100) and prints a Christmas 
 
 Input |Output
 ---|---
-f(1) |&nbsp;\|
+f(1) |&nbsp;&nbsp;\|
 ||* \| *
-f(2) |&nbsp;&nbsp;\|
+f(2) |&nbsp;&nbsp;&nbsp;\|
 ||&nbsp;* \| *
 ||** \| **
-f(3) |&nbsp;&nbsp;&nbsp;\|
-||&nbsp;&nbsp;* \| *
-||&nbsp;** \| **
-||*** \| ***
-f(4) |&nbsp;&nbsp;&nbsp;&nbsp;\|
+f(3) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|
 ||&nbsp;&nbsp;&nbsp;* \| *
 ||&nbsp;&nbsp;** \| **
-||&nbsp;*** \| ***
+||*** \| ***
+f(4) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* \| *
+||&nbsp;&nbsp;&nbsp;&nbsp;** \| **
+||&nbsp;&nbsp;*** \| ***
 ||**** \| ****
 
 ### 36. Sunglasses
@@ -678,18 +678,18 @@ Write a program that reads an integer n (3 <= n <= 100) and prints sunglasses of
 
 Input |Output
 ---|---
-f(3) |*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\******
+f(3) |*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;******
 ||\*////\*\|\|\|\*////\*
-||*\*\*\*\*\*&nbsp;&nbsp;&nbsp;******
-f(4) |*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;********
+||*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;******
+f(4) |*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;********
 ||\*//////\*\|\|\|\|\*//////\*
 ||\*//////\*&nbsp;&nbsp;&nbsp;&nbsp;\*//////\*
-||*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;********
-f(5) |*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**********
+||*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;********
+f(5) |*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**********
 ||\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*
 ||\*////////\*\|\|\|\|\|\*////////\*
 ||\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*
-||*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**********
+||*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**********
 
 **Tips:**
 * Print the top row of glasses:
@@ -706,12 +706,12 @@ f(5) |*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**********
 
 Input |Output
 ---|---
-f(7) |&nbsp;&nbsp;&nbsp;*
-||&nbsp;&nbsp;***
-||&nbsp;*****
+f(7) |&nbsp;&nbsp;&nbsp;&nbsp;*
+||&nbsp;&nbsp;&nbsp;***
+||&nbsp;&nbsp;*****
 ||*******
-||* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
-||* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+||* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+||* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
 f(4) |&nbsp;&nbsp;* *
 ||* * * *
 ||* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
@@ -727,17 +727,17 @@ f(3) |&nbsp;&nbsp;*
 
 Input |Output
 ---|---
-f(5) |&nbsp;&nbsp;&nbsp;&nbsp;1
-||&nbsp;&nbsp;&nbsp;232
-||&nbsp;&nbsp;34543
-||&nbsp;4567654
+f(5) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;232
+||&nbsp;&nbsp;&nbsp;&nbsp;34543
+||&nbsp;&nbsp;4567654
 ||567898765
-f(4) |&nbsp;&nbsp;&nbsp;1
-||&nbsp;&nbsp;232
-||&nbsp;34543
+f(4) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;&nbsp;&nbsp;232
+||&nbsp;&nbsp;34543
 ||4567654
-f(3) |&nbsp;&nbsp;1
-||&nbsp;232
+f(3) |&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;232
 ||34543
 
 ### 39. Arrow Pattern
@@ -782,13 +782,13 @@ Input |Output
 ---|---
 f(5) |#
 ||##
-||&nbsp;###
-||&nbsp;&nbsp;&nbsp;####
-||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#####
+||&nbsp;&nbsp;###
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;####
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#####
 f(4) |#
 ||##
-||&nbsp;###
-||&nbsp;&nbsp;&nbsp;####
+||&nbsp;&nbsp;###
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;####
 f(2) |#
 ||##
 
@@ -799,23 +799,23 @@ Draw an hourglass pattern:
 Input |Output
 ---|---
 f(5) |#######
-||&nbsp;#&nbsp;&nbsp;&nbsp;#
-||&nbsp;&nbsp;#&nbsp;#
-||&nbsp;&nbsp;&nbsp;#
-||&nbsp;&nbsp;#&nbsp;#
-||&nbsp;#&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
 ||#######
 f(8) |##########
-||&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
-||&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;#
-||&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;#
-||&nbsp;&nbsp;&nbsp;&nbsp;##
-||&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;#
-||&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;#
-||&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;##
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
+||&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#
 ||##########
 f(2) |####
-||&nbsp;##
+||&nbsp;&nbsp;##
 ||####
 
 ### 42. Left Arrow Pattern
@@ -824,35 +824,35 @@ Draw a left arrow pattern:
 
 Input |Output
 ---|---
-f(5) |&nbsp;&nbsp;&nbsp;*
-||&nbsp;&nbsp;**
-||&nbsp;***
+f(5) |&nbsp;&nbsp;&nbsp;&nbsp;*
+||&nbsp;&nbsp;&nbsp;**
+||&nbsp;&nbsp;***
 ||****
-||&nbsp;***
+||&nbsp;&nbsp;***
+||&nbsp;&nbsp;&nbsp;**
+||&nbsp;&nbsp;&nbsp;&nbsp;*
+f(4) |&nbsp;&nbsp;&nbsp;*
+||&nbsp;&nbsp;**
+||***
 ||&nbsp;&nbsp;**
 ||&nbsp;&nbsp;&nbsp;*
-f(4) |&nbsp;&nbsp;*
-||&nbsp;**
-||***
-||&nbsp;**
-||&nbsp;&nbsp;*
-f(10) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
-||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**
-||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***
-||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****
-||&nbsp;&nbsp;&nbsp;&nbsp;*****
-||&nbsp;&nbsp;&nbsp;******
+f(10) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****
+||&nbsp;&nbsp;&nbsp;&nbsp;******
 ||&nbsp;&nbsp;*******
 ||&nbsp;********
 ||*********
 ||&nbsp;********
 ||&nbsp;&nbsp;*******
-||&nbsp;&nbsp;&nbsp;******
-||&nbsp;&nbsp;&nbsp;&nbsp;*****
-||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****
-||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***
-||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**
-||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
+||&nbsp;&nbsp;&nbsp;&nbsp;******
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;****
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*
 
 ### 43. Pyramid of numbers
 
@@ -880,35 +880,35 @@ f(12) |1
 **Sample input:**
 input |output
 ---|---
-f(7) |&nbsp;&nbsp;&nbsp;&nbsp;1
-||&nbsp;&nbsp;2 3
+f(7) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;&nbsp;2 3
 ||4 5 6
-||&nbsp;&nbsp;&nbsp;&nbsp;7
-f(10) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
-||&nbsp;&nbsp;&nbsp;&nbsp;2 3
-||&nbsp;&nbsp;4 5 6
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7
+f(10) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 3
+||&nbsp;&nbsp;&nbsp;4 5 6
 ||7 8 9 10
-f(12) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
-||&nbsp;&nbsp;&nbsp;&nbsp;2 3
-||&nbsp;&nbsp;4 5 6
+f(12) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 3
+||&nbsp;&nbsp;&nbsp;4 5 6
 ||7 8 9 10
-||&nbsp;&nbsp;&nbsp;11 12
+||&nbsp;&nbsp;&nbsp;&nbsp;11 12
 
 **Sample input:**
 input |output
 ---|---
-f(7) |&nbsp;&nbsp;&nbsp;1
-||&nbsp;&nbsp;2 3
-||&nbsp;4 5 6
-||7
-f(10) |&nbsp;&nbsp;&nbsp;1
-||&nbsp;&nbsp;2 3
-||&nbsp;4 5 6
-||7 8 9 10
-f(12) |&nbsp;&nbsp;&nbsp;&nbsp;1
-||&nbsp;&nbsp;&nbsp;2 3
+f(7) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;&nbsp;&nbsp;2 3
 ||&nbsp;&nbsp;4 5 6
-||&nbsp;7 8 9 10
+||7
+f(10) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;&nbsp;&nbsp;2 3
+||&nbsp;&nbsp;4 5 6
+||7 8 9 10
+f(12) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 3
+||&nbsp;&nbsp;&nbsp;&nbsp;4 5 6
+||&nbsp;&nbsp;7 8 9 10
 ||11 12
 
 ### 45. Equal sum of odd and even positions
