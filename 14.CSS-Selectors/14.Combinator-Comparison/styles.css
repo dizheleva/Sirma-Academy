@@ -1,0 +1,7 @@
+div p {
+    background-color: magenta;
+}
+
+div > p {
+    background-color: lime;
+}
