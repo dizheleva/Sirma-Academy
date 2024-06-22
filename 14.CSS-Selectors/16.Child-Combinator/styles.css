@@ -1,0 +1,9 @@
+div > p {
+    /*styles all children*/
+    color: blueviolet;
+}
+
+.parent > p {
+    /*styles only direct children*/
+    color: red;
+}
