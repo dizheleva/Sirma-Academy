@@ -1,0 +1,16 @@
+h1 {
+    color: magenta;
+    font-style: italic;
+}
+
+p {
+    color: lime;
+    background-color: red;
+    font-family: cursive;
+}
+
+div {
+    color: blue;
+    background-color: yellow;
+    border: solid, blueviolet;
+}
