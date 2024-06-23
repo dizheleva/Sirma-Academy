@@ -1,0 +1,6 @@
+.width-example {
+    border: solid, greenyellow;
+    width: 30%;
+    max-width: 200px;
+    min-width: 100px;
+}
