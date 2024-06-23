@@ -1,0 +1,14 @@
+.block {
+    display: block;
+    border: solid, blue;
+}
+
+.inline {
+    display: inline;
+    border: solid, red;
+}
+
+.inline-block {
+    display: inline-block;
+    border: solid, greenyellow;
+}
