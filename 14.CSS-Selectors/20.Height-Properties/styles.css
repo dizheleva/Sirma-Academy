@@ -1,0 +1,6 @@
+.height-example {
+    border: solid, blue;
+    height: 20%;
+    min-height: 100px;
+    max-height: 300px;
+}
