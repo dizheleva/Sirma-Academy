@@ -283,22 +283,7 @@ Set the font-size of a parent div to 20px and a child div to 1.5em.
 ```
 
 Change the parent div&#39;s font-size to 10px and observe the change in the child div&#39;s font-size.
-```
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EM Units Exercise</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="parent">
-        <div class="child">I am 1.5em of my parent.</div>
-    </div>
-</body>
-</html>
-```
+
 ```
 .parent {
     /* Set font-size to 10px */
@@ -335,20 +320,6 @@ html {
 ```
 
 Change the root element&#39;s font-size to 20px and observe the change in the div element&#39;s font-size.
-```
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REM Units Exercise</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="rem-size">I am 2rem.</div>
-</body>
-</html>
-```
 
 ### 9. Specificity
 
@@ -413,8 +384,8 @@ Style elements with unique IDs.
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="unique-element">Unique Element</p>
-    <div>Element</p>
+    <div id="unique-element">Unique Element</div>
+    <div>Element</div>
 </body>
 </html>
 ```
@@ -490,20 +461,6 @@ Use the universal selector to set a default margin and padding for all elements.
 ```
 
 Use the universal selector to set a default font-family and color for all elements.
-```
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Selector Exercise</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div>Content with default margin and padding.</div>
-</body>
-</html>
-```
 
 ### 13. Descendant Combinator
 
