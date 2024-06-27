@@ -17,7 +17,7 @@ You will create a simple web page with a header, main content area, and footer. 
 layout will change based on the screen size.
 * For screens wider than 1200px, the layout should be a three-column grid.
 * For screens between 600px and 1200px, the layout should switch to a two-column grid.
-*For screens narrower than 600px, the layout should use a single-column flexbox layout.
+* For screens narrower than 600px, the layout should use a single-column flexbox layout.
 
 |Starter code|
 |---|
