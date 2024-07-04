@@ -10,11 +10,9 @@ simple layout that adjusts its design at different breakpoints.
 ### Objective
 Understand and apply media queries to create responsive designs.
 
-Use flexbox and grid layouts in combination with media queries to achieve a fluid and
-adaptive design.
+Use flexbox and grid layouts in combination with media queries to achieve a fluid and adaptive design.
 
-You will create a simple web page with a header, main content area, and footer. The
-layout will change based on the screen size.
+You will create a simple web page with a header, main content area, and footer. The layout will change based on the screen size.
 * For screens wider than 1200px, the layout should be a three-column grid.
 * For screens between 600px and 1200px, the layout should switch to a two-column grid.
 * For screens narrower than 600px, the layout should use a single-column flexbox layout.
@@ -38,8 +36,7 @@ layout will change based on the screen size.
 
         .container {}
 
-        header,
-        footer {
+        header, footer {
             background-color: #333;
             color: white;
             text-align: center;
@@ -82,7 +79,7 @@ layout will change based on the screen size.
         <div class="box">Box 3</div>
     </div>
     <footer>
-        <p>&amp;copy; 2024 Responsive Design</p>
+        <p>&copy; 2024 Responsive Design</p>
     </footer>
 </body>
 
@@ -188,9 +185,9 @@ main content should be a single-column flexbox layout with adjusted padding.
     </header>
     <nav>
         <a href="#section1">Section1</a>
-        <a href="section2">Section2</a>
-        <a href="section3">Section3</a>
-        <a href="section4">Section4</a>
+        <a href="#section2">Section2</a>
+        <a href="#section3">Section3</a>
+        <a href="#section4">Section4</a>
     </nav>
     <div class="container">
         <div id="section1" class="section">Section 1</div>
@@ -199,7 +196,7 @@ main content should be a single-column flexbox layout with adjusted padding.
         <div id="section4" class="section">Section 4</div>
     </div>
     <footer>
-        <p>&amp;copy; 2024 Advanced Responsive Design</p>
+        <p>&copy; 2024 Advanced Responsive Design</p>
     </footer>
 </body>
 
