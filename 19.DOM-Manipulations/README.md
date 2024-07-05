@@ -220,7 +220,7 @@ Clicking on the button the font, font size, and color of the paragraph text will
 
 ### 10. Write a JavaScript program to calculate sphere volume.
 
-![Task Illustration](/assets/task10.png)
+![Task Illustration](https://github.com/dizheleva/Sirma-Academy/blob/main/19.DOM-Manipulations/assets/task10.png "task 10")
 
 ### 11. Write a JavaScript program to highlight the bold words of the following paragraph, on mouse over the link.
 __link__
@@ -235,7 +235,7 @@ JavaScript **skill**.
 
 ### 14. You are building a web page that displays a list of items. The user should be able to add new items to the list and edit the text of the items. Your task is to use the DOM API to create the necessary elements, add event listeners to them, and manipulate the elements as the user interacts with the page.
 
-![Task Illustration](/assets/task14.png)
+![Task Illustration](https://github.com/dizheleva/Sirma-Academy/blob/main/19.DOM-Manipulations/assets/task14.png "task 14")
 
 ```
 <div id="list-app">
