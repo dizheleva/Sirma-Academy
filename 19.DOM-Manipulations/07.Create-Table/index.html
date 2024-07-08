@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create table</title>
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="myTable" border="1">
+    </table>
+    <br>
+    <form>
+        Rows: <input type="number" name="rows" id="rows"><br><br>
+        Columns: <input type="number" name="columns" id="columns"><br><br>
+        <input type="button" onclick="createTable(document.getElementById('rows').value, document.getElementById('columns').value)" value="Create the table">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
