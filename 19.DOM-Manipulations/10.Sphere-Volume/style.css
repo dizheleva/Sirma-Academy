@@ -1,0 +1,15 @@
+body {
+    margin: 30px;
+}
+
+div {
+    border: solid 5px darkgreen;
+    padding: 20px;
+    width: fit-content;
+    background-color: WhiteSmoke;
+}
+
+p {
+    font-weight: bold;
+    font-size: 18px;
+}
