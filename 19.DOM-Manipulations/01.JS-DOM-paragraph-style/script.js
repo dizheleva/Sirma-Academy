@@ -3,7 +3,7 @@ function restyle() {
 
     const pElement = document.getElementById('text');    
 
-    pElement.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    pElement.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
     pElement.style.fontFamily = families[Math.floor(Math.random() * families.length)];
     pElement.style.fontSize = Math.floor((Math.random() * 32) + 10) + 'px';
 }

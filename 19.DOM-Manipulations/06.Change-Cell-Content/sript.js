@@ -13,7 +13,7 @@ function changeContent(row, column, content) {
         const tableRow = tableBodyElement.children[row - 1];
         const cell = tableRow.children[column - 1];
 
-        cell.innerHTML = content;
+        cell.textContent = content;
 
         clearInputFields();
     }

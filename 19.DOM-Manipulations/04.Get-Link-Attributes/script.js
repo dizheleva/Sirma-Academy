@@ -2,12 +2,12 @@ function getAttributes() {
     const link = document.getElementsByTagName('a')[0];
     const attributes = Array.from(link.attributes);
 
-    let text = '';
+    let message = '';
 
     attributes.forEach(attribute => {
         console.log(`${attribute.name}=${attribute.value}`);
-        text += attribute.name + "=" + attribute.value + "<br>";
+        message += attribute.name + '=' + attribute.value + '\n';
     })
 
-    document.getElementById('demo').innerHTML = text;
+    alert(message);
 }
