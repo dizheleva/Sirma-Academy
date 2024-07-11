@@ -1,0 +1,19 @@
+body {
+    margin: 30px;
+}
+
+div {
+    border: solid 5px darkslategrey;
+    padding: 20px;
+    width: 400px;
+    background-color: WhiteSmoke;
+}
+
+p {
+   font-size: 18px;
+}
+
+.inputLi {
+    background-color: transparent;
+    border-style: none;
+}
