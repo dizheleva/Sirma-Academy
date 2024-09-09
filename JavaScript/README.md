@@ -1,7 +1,7 @@
 # Sirma-Academy
 **JavaScript** Front-End Development course
 * This repository stores the exercises and tasks created during the course.
-* [Sirma Academy](https://careers.sirma.com/sirmaacademy.html), _Enrolled: May 2024_ 
+* [Sirma Academy](https://careers.sirma.com/sirmaacademy.html) 
 ---
 ## Conspect:
 ### 1. [Basic Syntax](01.Basic-Syntax)
