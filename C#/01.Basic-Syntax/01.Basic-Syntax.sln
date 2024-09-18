@@ -3,27 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.HelloWorld", "01.HelloWorld\01.HelloWorld.csproj", "{78AF72AA-2843-416A-8E61-4F5D8460C62C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.FirstProgram", "02.FirstProgram\02.FirstProgram.csproj", "{102EB72A-2C78-4D9F-BE3F-5A5668EB5F40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.FirstProgram", "02.FirstProgram\02.FirstProgram.csproj", "{102EB72A-2C78-4D9F-BE3F-5A5668EB5F40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.DifferentDataTypes", "03.DifferentDataTypes\03.DifferentDataTypes.csproj", "{3267A411-70F7-428C-B2D1-9B8E20422B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.DifferentDataTypes", "03.DifferentDataTypes\03.DifferentDataTypes.csproj", "{3267A411-70F7-428C-B2D1-9B8E20422B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.ReadUserInput-Name", "04.ReadUserInput-Name\04.ReadUserInput-Name.csproj", "{CC0B54B1-159F-4ECD-B6C8-FFE192FAE745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.ReadUserInput-Name", "04.ReadUserInput-Name\04.ReadUserInput-Name.csproj", "{CC0B54B1-159F-4ECD-B6C8-FFE192FAE745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.ReadDifferentData", "05.ReadDifferentData\05.ReadDifferentData.csproj", "{2EE54759-D5B1-41BE-8EEE-6C4ED0877A7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.ReadDifferentData", "05.ReadDifferentData\05.ReadDifferentData.csproj", "{2EE54759-D5B1-41BE-8EEE-6C4ED0877A7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Printing", "06.Printing\06.Printing.csproj", "{1E80DAF8-2478-4600-89AB-E609069B06D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Printing", "06.Printing\06.Printing.csproj", "{1E80DAF8-2478-4600-89AB-E609069B06D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.WeatherForecast", "07.WeatherForecast\07.WeatherForecast.csproj", "{DDD65A8C-537C-4C2A-A621-A28CC3B3D40F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.WeatherForecast", "07.WeatherForecast\07.WeatherForecast.csproj", "{DDD65A8C-537C-4C2A-A621-A28CC3B3D40F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.KilometersToMiles", "08.KilometersToMiles\08.KilometersToMiles.csproj", "{078A9BBE-BAD6-4177-B758-E5E35F412856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.KilometersToMiles", "08.KilometersToMiles\08.KilometersToMiles.csproj", "{078A9BBE-BAD6-4177-B758-E5E35F412856}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.Calculate", "09.Calculate\09.Calculate.csproj", "{8C80380B-4D2A-40DF-AF3A-6BEB39728EE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.Calculate", "09.Calculate\09.Calculate.csproj", "{8C80380B-4D2A-40DF-AF3A-6BEB39728EE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.Time", "10.Time\10.Time.csproj", "{DCF506BC-928A-4F96-9F07-1EB4288ED1C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.Time", "10.Time\10.Time.csproj", "{DCF506BC-928A-4F96-9F07-1EB4288ED1C3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.Speed", "11.Speed\11.Speed.csproj", "{775B28B8-4C11-4B23-BD09-BE167B831814}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.Speed", "11.Speed\11.Speed.csproj", "{775B28B8-4C11-4B23-BD09-BE167B831814}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{78AF72AA-2843-416A-8E61-4F5D8460C62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78AF72AA-2843-416A-8E61-4F5D8460C62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78AF72AA-2843-416A-8E61-4F5D8460C62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78AF72AA-2843-416A-8E61-4F5D8460C62C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{102EB72A-2C78-4D9F-BE3F-5A5668EB5F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{102EB72A-2C78-4D9F-BE3F-5A5668EB5F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{102EB72A-2C78-4D9F-BE3F-5A5668EB5F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
