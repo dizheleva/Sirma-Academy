@@ -1,7 +1,8 @@
 function solve(arr) {
     let outputArr = [];
  
-    for (let i = arr.length - 1; i >= 0; i-=2) {
+    let startIndex = arr.Length % 2 == 0 ? arr.Length - 1 : arr.Length - 2;
+    for (let i = startIndex; i >= 0; i-=2) {
         let number = arr[i] * 2;
         outputArr.push(number);
     }

@@ -5,7 +5,7 @@ function solve(firstArr, secondArr) {
     
     for (let i = 0; i < firstArr.length; i++) {
         if (firstArr[i] === secondArr[i]) {
-            sum += Number(firstArr[i])
+            sum += Number(firstArr[i]);
         } else {
             isIdentical = false;
             index = i;
