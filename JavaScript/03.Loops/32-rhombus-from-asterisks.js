@@ -1,34 +1,27 @@
 function buildTopCenter(n) {
     let rows = n * 2 - 1;
     let symbol = '* ';
-    for (let r = 1; r <= rows; r++) {
+    for (let r = 0; r < rows; r++) {
         let row = '';
 
-        if (r <= n) {
-            for (let c = 1; c <= r; c++) {
-                if (row.length < n - r) {
-                    for (let s = 1; s <= n - r; s++) {
-                        row += ' ';
-                    }
-                }
-                
-                row += symbol;
-            }
-
-            console.log(row);
+        let colEnd;
+        if (r < n) {
+            colEnd = r + 1;
         } else {
-            for (let c = rows - r + 1; c >= 1; c--) {
-                if (row.length < r - n) {
-                    for (let s = r - n; s >= 1; s--) {
-                        row += ' ';
-                    }
-                }
+            colEnd = rows - r;
+        }
 
-                row += symbol;
+        for (let c = 0; c < colEnd; c++) {
+            let spacesCount = Math.abs(n - (r + 1));
+
+            while (row.length < spacesCount) {
+                row += ' ';
             }
 
-            console.log(row);
+            row += symbol;
         }
+
+        console.log(row);
     }
 }
 

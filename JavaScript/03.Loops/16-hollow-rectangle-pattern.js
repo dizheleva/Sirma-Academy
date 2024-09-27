@@ -5,10 +5,9 @@ function build(n, m) {
         for (let c = 0; c < m; c++) {
             let symbol;
             let isBorderRow = r === 0 || r === n - 1;
+            let isBorderCol = c === 0 || c === m - 1;
 
-            if (isBorderRow) {
-                symbol = '*';
-            } else if (c === 0 || c === m - 1) {
+            if (isBorderRow || isBorderCol) {
                 symbol = '*';
             } else {
                 symbol = ' ';

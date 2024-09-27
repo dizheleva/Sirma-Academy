@@ -1,12 +1,11 @@
 function solve(n) {
     let sum = 0;
     let a = 0;
-    let b = 1;
-    let step = 0;
+    let b = 1;    
 
     for (let i = 0; i <= n; i++) {
         sum += a;
-        step = a + b;
+        let step = a + b;
         a = b;
         b = step;
     }

@@ -41,7 +41,7 @@ function buildRightCenter(n) {
 
             if (r === rowCount && c === 0) {
                 let numberSize = number.toString().length;
-                let spaceCount = longestSize - bottomRowNumCount * (numberSize + 1)
+                let spaceCount = longestSize - bottomRowNumCount * (numberSize + 1);
                 for (let s = 0; s < spaceCount; s++) {
                     output += ' ';
                 }

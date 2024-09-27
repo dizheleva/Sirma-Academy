@@ -3,18 +3,16 @@ function buildTopCenter(n) {
     for (let r = 1; r < n; r++) {
         row = '';
 
-        for (let c = 1; c <= n - 1 - r; c++) {
-            row += ' ';
-        }
-
-        for (let c = n - 1; c < n - 1 + r; c++) {
-
+        for (let c = 1; c <= r; c++) {
+            while (row.length < n - 1 - r) {
+                row += ' ';
+            }
             row += '* ';
         }
 
         console.log(row);
     }
-    
+
     for (let r = n; r < 2 * n - 1; r++) {
         row = '';
         let spaceLength;

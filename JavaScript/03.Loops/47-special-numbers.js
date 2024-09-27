@@ -16,7 +16,7 @@ function genetareSpecialNumbers(n) {
         }
 
         if (isSpecial) {
-            console.log(i)
+            console.log(i);
         }
     }
 }

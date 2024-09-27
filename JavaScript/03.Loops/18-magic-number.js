@@ -1,16 +1,18 @@
 function solve(bottom, top, magicNumber) {
-    let rezult;
+    let result;
     let counter = 0;
-    let isCombination = false;
-    for (let i = bottom; i <= top; i++) {        
+    
+    for (let i = bottom; i <= top; i++) {     
+        let isCombination = false;
+       
         for (let j = bottom; j <= top; j++) {            
             isCombination = i + j === magicNumber;
             counter++;
             if (isCombination) {
-                rezult = `Combination ${counter} - (${i} + ${j} = ${magicNumber})`;
+                result = `Combination ${counter} - (${i} + ${j} = ${magicNumber})`;
                 break;
             } else {
-                rezult = `${counter} combinations - neither equals ${magicNumber}`;
+                result = `${counter} combinations - neither equals ${magicNumber}`;
             }            
         }
 
@@ -18,7 +20,8 @@ function solve(bottom, top, magicNumber) {
             break;
         }        
     }
-    console.log(rezult);
+    
+    console.log(result);
 }
 
 solve(1, 10, 5);

@@ -1,5 +1,5 @@
 function build(n) {
-    let row = '';
+    let row;
 
     for (let r = 1; r < n; r++) {
         row = '';

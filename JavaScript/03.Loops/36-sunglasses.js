@@ -1,29 +1,15 @@
 function build(n) {
-    let symbol;
-    let row;
-
     for (let r = 1; r <= n; r++) {
-        row = '';
+        let row = '';
 
         for (let c = 1; c <= n * 5; c++) {
-            if (r === 1 && c <= n * 2 || r === 1 && c > n * 3
-                || c === 1 || c === n * 2 || c === n * 3 + 1 || c === n * 5
-                || r === n && c <= n * 2 || r === n && c > n * 3) {
+            let symbol;
+
+            if (((r === 1 || r === n) && (c <= n * 2 || c > n * 3))
+                || c === 1 || c === n * 2 || c === n * 3 + 1 || c === n * 5) {
                 symbol = '*';
             } else if (c > n * 2 && c <= n * 3) {
-                if (n % 2 === 0) {
-                    if (r === n / 2) {
-                        symbol = '|';
-                    } else {
-                        symbol = ' ';
-                    }
-                } else {
-                    if (r === (n + 1) / 2) {
-                        symbol = '|';
-                    } else {
-                        symbol = ' ';
-                    }
-                }
+                symbol = r == Math.ceil(n / 2) ? '|' : ' ';
             } else {
                 symbol = '/';
             }

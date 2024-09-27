@@ -4,13 +4,14 @@ function solve(money, students, saberPrice, robePrice, beltPrice) {
     let robesCost = students * robePrice;
     let beltsCost = (students - Math.floor(students / 6)) * beltPrice;
     let totalCost = sabersCost + robesCost + beltsCost;
-    let rezult;
+    
+    let result;
     if (money >= totalCost) {
-        rezult = `The money is enough - it would cost ${totalCost.toFixed(2)}lv.`
+        result = `The money is enough - it would cost ${totalCost.toFixed(2)}lv.`;
     } else {
-        rezult = `George Lucas will need ${(totalCost - money).toFixed(2)}lv more.`
+        result = `George Lucas will need ${(totalCost - money).toFixed(2)}lv more.`;
     }
-    console.log(rezult);
+    console.log(result);
 }
 
 solve(100, 2, 1.0, 2.0, 3.0);

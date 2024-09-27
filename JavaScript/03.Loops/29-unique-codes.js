@@ -19,8 +19,7 @@ function solve(firstLimit, secondLimit, thirdLimit) {
                         }
                     }
                 }
-            }
-            
+            }            
         }
     }
 }

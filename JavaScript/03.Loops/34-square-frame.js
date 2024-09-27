@@ -5,10 +5,7 @@ function buildTopCenter(n) {
         for (let c = 1; c <= n; c++) {
             let symbol;
 
-            if (r === 1 && c === 1
-                || r === 1 && c === n
-                || r === n && c === 1
-                || r === n && c === n) {
+            if ((r == 1 || r == n) && (c == 1 || c == n)) {
                 symbol = '+';
             } else if (c === 1 || c === n) {
                 symbol = '|';

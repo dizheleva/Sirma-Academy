@@ -21,7 +21,6 @@ function solve(a, b) {
     if (!isMatch) {
         console.log('None');
     }
-
 }
 
 solve(100000, 100050);
