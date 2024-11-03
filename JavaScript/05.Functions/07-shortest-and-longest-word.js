@@ -1,5 +1,6 @@
-function findLongestWord(arr) {
-    const senteseSigns = ',.?;:!"';
+const senteseSigns = ',.?;:!"';
+
+function findLongestWord(arr) {    
     let longest = '';
     
     for (const word of arr) {
@@ -19,7 +20,6 @@ function findLongestWord(arr) {
 }
 
 function findShortestWord(arr) {
-    const senteseSigns = ',.?;:!"';
     let shortest = arr[0];    
     
     for (const word of arr) {  

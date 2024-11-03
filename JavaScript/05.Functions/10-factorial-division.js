@@ -1,13 +1,14 @@
 function getFactorial(number) {
-    if (number === 0 || number === 1) {
-        return 1;
+    let output = 1;
+    if (number === 0) {
+        output = getFactorial(number + 1);
     }
 
-    for (let i = number - 1; i >= 1; i--) {
-        number *= i;
+    for (let i = 1; i <= number; i++) {
+        output *= i;
     }
 
-    return number;
+    return output;
 }
 
 function divideFactorials(first, second) {

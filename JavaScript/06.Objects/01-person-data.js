@@ -8,10 +8,14 @@ function createPerson(name, surname, age) {
     return person;
 }
 
-function printObject(name, surname, age) {
-    let personObj = createPerson(name,surname, age);
-    console.log(personObj);
+function printObject(person) {
+    console.log(person);
 }
 
-printObject("Ivan","Ivanov", 29);
-printObject("Maria","Marinova", 13);
+function solve(name,surname, age) {
+    let person = createPerson(name,surname, age);
+    printObject(person);
+}
+
+solve("Ivan","Ivanov", 29);
+solve("Maria","Marinova", 13);

@@ -8,13 +8,16 @@ function createPerson(firstName, lastName, eyeColor) {
     return person;
 }
 
-function printJsonPerson(name, surname, color) {
-    let person = createPerson(name, surname, color);
-
+function printJsonPerson(person) {
     let personJSON = JSON.stringify(person);
 
     console.log(personJSON);
 }
 
-printJsonPerson("Ivan", "Ivanov", "blue");
-printJsonPerson("Maria", "Petrova", "brown");
+function solve(name, surname, color) {
+    let person = createPerson(name, surname, color);
+    printJsonPerson(person);
+}
+
+solve("Ivan", "Ivanov", "blue");
+solve("Maria", "Petrova", "brown");
