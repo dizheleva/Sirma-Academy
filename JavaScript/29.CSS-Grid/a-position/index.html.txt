@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Position</title>
+</head>
+<body>
+    <h1>CSS Position</h1>
+
+    <main class="site-content">
+        <button class="absolute-button">Absolute</button>
+        <button class="relative-button">Relative</button>
+        <button class="fixed-button">Fixed</button>
+        <button class="sticky-button">Sticky</button>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ea iste facere adipisci maxime eum culpa optio architecto suscipit consequuntur laudantium voluptatum, cumque praesentium placeat commodi alias nisi! Officiis deserunt, inventore tempora omnis facere officia dicta dolorem cupiditate iure, delectus rerum unde quam. Quibusdam magni totam inventore laborum repellendus aperiam in doloremque aliquam eaque iure amet alias illo a, commodi laudantium autem fugiat cupiditate, quam quisquam dignissimos voluptatem sint corrupti aspernatur consectetur? Illo reprehenderit repudiandae eius hic laborum quasi accusamus sint porro! In iusto doloremque blanditiis minima, accusantium odit excepturi sit asperiores eius ex consequatur at nostrum mollitia necessitatibus! Nisi.
+    </main>
+
+    <footer>All rights reserved &copy;</footer>
+</body>
+</html>

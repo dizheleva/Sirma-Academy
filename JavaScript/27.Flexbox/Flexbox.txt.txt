@@ -1,0 +1,47 @@
+		WHAT IS FLEXBOX:
+	-- One-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces.
+	-- When elements are laid out as flex items, they are laid out along two axes.
+	-- Flex container: Set a value of 'flex' to the display property on the parent element of the elements you want to affect.
+	
+	.container {
+		display: flex;
+	}
+	
+	-- flex-direction: row | row-reverse | column | column-reverse --> Specifies which direction the main axis runs (which direction the flexbox children are laid out in). By default, is row.
+	-- flex-wrap: nowrap | wrap | wrap-reverse --> By default, flex items will all try to fit onto one line. Allow the items to wrap as needed with this property
+	-- justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right
+	-- align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end
+	-- gap, row-gap, column-gap --> Controls the space between flex items. It applies that spacing only between items not on the edges.
+	
+	.container {
+		gap: 10px;
+		gap: 10px 20px;
+		row-gap: 10px;
+		column-gap: 20px;
+	}	
+
+		FLEX ITEMS:
+	-- order --> By default, flex items are laid out in the source order. The order property controls the order in which they appear in the flex container.
+	
+	.item {
+		order: 5
+	}
+	
+	-- flex-grow --> defines the ability for a flex item to grow if necessary. Sets the flex grow factor, which specifies how much of the flex container's remaining space should be assigned to the flex item's main size.
+	-- flex-shrink --> defines the ability for a flex item to shrink if necessary.
+	
+	.item {
+		flex-grow: 2;
+	}
+	
+	-- align-self: auto | flex-start | flex-end | center | baseline | stretch; --> This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+	
+	.item { 
+		align-self: auto;
+	}
+	
+		EXERCISES:
+	- https://flexboxfroggy.com/ 
+	- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+	- http://www.flexboxdefense.com/ 
+	- https://codingfantasy.com/games/flexboxadventure

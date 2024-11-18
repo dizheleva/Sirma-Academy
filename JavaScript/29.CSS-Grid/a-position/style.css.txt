@@ -1,0 +1,36 @@
+body {
+    background-color: antiquewhite;
+}
+
+.site-content {
+    width: 50%;
+    height: 150vh;
+    background-color: chocolate;
+}
+
+.absolute-button {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    z-index: 10;
+}
+
+.relative-button {
+    position: relative;
+    top: -10px
+}
+
+.fixed-button {
+    position: fixed;
+    top: 120px;
+    left: 50px;
+}
+
+.sticky-button {
+    position: sticky;
+    top: 10px;
+}
+
+.site-content {
+    position: relative;
+}

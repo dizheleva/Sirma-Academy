@@ -1,0 +1,63 @@
+	1. Positioning: 
+	
+	-- Specifies the type of positioning method used for an element:
+	static | relative | fixed | absolute | sticky
+	
+	-- Elements are positioned using top, bottom, left, and right. These properties will NOT work if the position property is not set. Work differently depending on the position value.
+	
+	-- position: static; --> Default state of every element — it just means "put the element into its normal position in the document layout flow — nothing special to see here."
+	-- position: relative; --> Like static positioning, except that once the element has taken its place in the layout flow, you can modify its final position, including making it overlap other elements.
+	-- position: absolute; --> Position the element based on a coordinate system. Use left, top, bottom, right to place the element exactly where we want.
+	-- position: fixed; --> Removed from the normal document flow. Positioned relative to its initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+	-- position: sticky; --> Positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing
+	-- position: sticky; --> Sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest scrolling ancestor.
+	-- z-index: [number]; --> Sets the z-order of a positioned element. Overlapping elements with a larger z-index cover those with a smaller one.
+	
+	2. Grid:
+	-- Two-dimensional grid-based layout
+	
+	-- display: grid; --> Defines the element as a grid container and establishes a new grid formatting context for its contents.
+	-- grid-template --> Defines the columns and rows of the grid with a space-separated list of values.
+		* grid-template-columns: [num]px [num]px;
+		* grid-template-rows: ... ...;
+	-- Gap --> Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
+	
+		.container {
+			column-gap: 10px;
+			row-gap: 15px;
+			/* gap: 10px 15px; */
+		}
+		
+	-- justify-items: start | end | center | stretch --> Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis).
+	-- align-items: start | end | center | stretch | baseline --> Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis).
+	
+	3. Items:
+	
+	-- Grid items Properties: grid-column-start | grid-column-end | grid-row-start | grid-row-end
+	
+		.item-a {
+			grid-column-start: 2;
+			grid-column-end: five;
+			grid-row-start: row1-start;
+			grid-row-end: 3;
+		}
+		
+	-- grid-column | row --> Shorthand for grid-column-start + grid-column-end and grid-row-start + grid-row-end
+	
+		.item-c {
+			grid-column: 3 / span 2;
+			grid-row: third-line / 4;
+		}
+		
+	-- fr units --> Fr (fractional units) mean “portion of the remaining space”. 1fr and 3fr means 25% and 75%
+	
+		.item-c {
+			grid-template-columns: 1fr 3fr;
+		}
+	
+	4. Exercises:
+	
+	-- https://cssgridgarden.com/ 
+	-- https://css-tricks.com/snippets/css/complete-guide-grid 
+	-- https://www.joshwcomeau.com/css/interactive-guide-to-grid/ 
+	-- https://codingfantasy.com/games/css-grid-attack	
