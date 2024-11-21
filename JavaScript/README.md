@@ -22,9 +22,9 @@
 ---
 ###     **JS Advanced:**
 ---
-### 13. Advanced Functions
-### 14. Object & Composition
-### 15. Prototype and Inheritance
+### 13. [Advanced Functions](13.Advanced-Functions)
+### 14. [Object & Composition](14.Objects-and-Composition)
+### 15. [Prototype and Inheritance](15.Prototype-and-Inheritance)
 ### 16. Workshop
 ### 17. Events & Promises
 ### 18. Async
