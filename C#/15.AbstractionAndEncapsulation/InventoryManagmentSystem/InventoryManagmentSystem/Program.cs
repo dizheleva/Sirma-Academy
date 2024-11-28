@@ -4,10 +4,11 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        List<InventoryItem> inventoryList = new List<InventoryItem>();
+        List<InventoryItem> inventoryList = [];
 
         ElectronicsItem laptop1 = new ElectronicsItem("A01", 1, "Lenovo X1", "X1 Carbon", 1289);
         ElectronicsItem laptop2 = new ElectronicsItem("A02", 2, "Lenovo Yoga", "X1 Yoga", 1029);
+        Console.WriteLine(laptop2.CalculateValue());
 
         GroceryItem potatoes = new GroceryItem("G89", 2, "Potato", "Canadian", 3.45m, 10, DateTime.Now.AddDays(10));
         potatoes.HandleExpiration();
@@ -22,7 +23,5 @@ internal class Program
 
         Console.WriteLine(laptop1.GetDetails());
         Console.WriteLine(potatoes.GetDetails());
-        Console.WriteLine(laptop2.CalculateValue());
-        //Console.WriteLine(vase.GetDetails());
     }
 }

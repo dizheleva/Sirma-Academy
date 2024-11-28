@@ -10,6 +10,10 @@
         public DateTime ExpirationDate { get; set; } = expirationDate;
 
         public override decimal CalculateValue() => base.CalculateValue() * Quantity * (decimal)Weight;
+        public override string GetDetails()
+        {
+            return base.GetDetails() + $"\nExpiration date: {ExpirationDate}";
+        }
 
         public override void HandleExpiration()
         {

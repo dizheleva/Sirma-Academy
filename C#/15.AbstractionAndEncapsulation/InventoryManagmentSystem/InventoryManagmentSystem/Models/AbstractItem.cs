@@ -40,7 +40,7 @@
             isPerishable = IsPerishable();
         }
 
-        public string GetDetails()
+        public virtual string GetDetails()
         {
             var details = new StringBuilder();
             details.AppendLine("---------- Item ----------");
@@ -59,8 +59,6 @@
             {
                 details.AppendLine("perishable");
             }
-
-            details.AppendLine("--------------------------");
 
             return details.ToString().TrimEnd();
         }
