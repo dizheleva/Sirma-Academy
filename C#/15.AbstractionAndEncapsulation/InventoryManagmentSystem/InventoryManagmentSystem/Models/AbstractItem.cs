@@ -29,6 +29,22 @@
                 name = value;
             }
         }
+        public Category Category
+        {
+            get => GetCategory();
+            set => SetCategory(value);
+        }
+
+        public string Description
+        {
+            get => description;
+        }
+
+        public decimal Price
+        {
+            get => GetPrice();
+            set => SetPrice(value);
+        }
 
         public AbstractItem(string name, Category category, string description, decimal price)
         {

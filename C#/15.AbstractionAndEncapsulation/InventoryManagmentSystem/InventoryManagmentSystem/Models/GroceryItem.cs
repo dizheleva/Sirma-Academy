@@ -7,7 +7,7 @@
     {
         private const Category category = Category.Grocery;
         public double Weight { get; set; } = weight;
-        public DateTime ExpirationDate { get; set; } = expirationDate;
+        public string ExpirationDate { get; set; } = expirationDate.ToString("MM/dd/yyyy");
 
         public override decimal CalculateValue() => base.CalculateValue() * Quantity * (decimal)Weight;
         public override string GetDetails()
@@ -17,7 +17,7 @@
 
         public override void HandleExpiration()
         {
-            if (ExpirationDate == DateTime.UtcNow)
+            if (expirationDate == DateTime.Now)
             {
                 base.HandleExpiration();
                 Quantity--;

@@ -1,4 +1,6 @@
-﻿using InventoryManagmentSystem.Models;
+﻿using System.Text.Json;
+using InventoryManagmentSystem.JsonIOManager;
+using InventoryManagmentSystem.Models;
 
 internal class Program
 {
@@ -16,12 +18,31 @@ internal class Program
         FragileItem vase = new FragileItem("F58", 7, "Vase", "Made in China", 3.90m, 0.380);
 
         Console.WriteLine(vase.GetDetails());
-        vase.IsBroken = true;
         vase.HandleBreakage();
         vase.DisplayDescription();
         Console.WriteLine(vase.Quantity);
 
         Console.WriteLine(laptop1.GetDetails());
         Console.WriteLine(potatoes.GetDetails());
+
+        var jsonLaptop = JsonSerializer.Serialize(laptop1);
+        Console.WriteLine(jsonLaptop);
+
+        var jsonPotato = JsonSerializer.Serialize(potatoes);
+        Console.WriteLine(jsonPotato);
+
+        var jsonVase = JsonSerializer.Serialize(vase);
+        Console.WriteLine(jsonVase);
+
+
+        inventoryList.Add(laptop1);
+        inventoryList.Add(laptop2);
+        inventoryList.Add(potatoes);
+        inventoryList.Add(vase);
+
+        string folderName = "Dataset";
+        string fileName = "data.json";
+        var mapper = new IOManager(folderName, fileName);
+        mapper.UpdateData(inventoryList);
     }
 }
