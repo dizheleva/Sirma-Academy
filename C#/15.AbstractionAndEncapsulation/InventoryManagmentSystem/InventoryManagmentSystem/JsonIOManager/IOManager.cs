@@ -6,20 +6,16 @@
 
     public class IOManager
     {
-        private readonly string folderName;
-        private readonly string fileName;
-        public string FilePath { get; set; }
-        public IOManager(string folderName, string fileName)
-        {
-            this.folderName = folderName;
-            this.fileName = fileName;
-            FilePath = GetIOPath(this.folderName, this.fileName);
-        }
-        public List<InventoryItem> LoadData()
+
+        const string folderName = "Dataset";
+        const string fileName = "data.json";
+
+        private static string filePath = GetIOPath(folderName, fileName);
+        public static List<InventoryItem> LoadData()
         {
             try
             {
-                using var stream = new FileStream(FilePath, FileMode.Open);
+                using var stream = new FileStream(filePath, FileMode.Open);
                 byte[] buffer = new byte[stream.Length];
 
                 while (true)
@@ -45,12 +41,12 @@
             }
         }
 
-        public void UpdateData(List<InventoryItem> items)
+        public static void SaveData(List<InventoryItem> items)
         {
             var jsonText = JsonSerializer.Serialize(items);
             Console.WriteLine(jsonText);
 
-            using var stream = new FileStream(FilePath, FileMode.Create);
+            using var stream = new FileStream(filePath, FileMode.Create);
 
             byte[] bytes = Encoding.UTF8.GetBytes(jsonText);
             stream.Write(bytes, 0, bytes.Length);

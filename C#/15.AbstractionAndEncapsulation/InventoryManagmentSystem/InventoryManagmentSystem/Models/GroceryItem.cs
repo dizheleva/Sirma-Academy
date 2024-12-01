@@ -1,33 +1,46 @@
 ﻿namespace InventoryManagmentSystem.Models
 {
+    using System.Text;
     using InventoryManagmentSystem.Models.Enums;
 
-    public class GroceryItem(string id, int quantity, string name, string description, decimal price, double weight, DateTime expirationDate) 
-        : InventoryItem(id, quantity, name, SetCategory(category), description, price)
+    public class GroceryItem : InventoryItem
     {
-        private const Category category = Category.Grocery;
-        public double Weight { get; set; } = weight;
-        public string ExpirationDate { get; set; } = expirationDate.ToString("MM/dd/yyyy");
-
-        public override decimal CalculateValue() => base.CalculateValue() * Quantity * (decimal)Weight;
-        public override string GetDetails()
+        public GroceryItem(string id, string name, string description, decimal price, int quantity, double weight, DateTime expirationDate)
+            : base (SetCategory(category), id, name, description, price, quantity)
         {
-            return base.GetDetails() + $"\nExpiration date: {ExpirationDate}";
+            Weight = weight;
+            ExpirationDate = expirationDate;
         }
 
-        public override void HandleExpiration()
+        private const Category category = Category.Grocery;
+        public double Weight { get; set; }
+        public DateTime ExpirationDate { get; set; }
+
+        public override decimal CalculateValue() => base.CalculateValue() * Quantity * (decimal)Weight;
+
+        public override string GetDetails()
         {
-            if (expirationDate == DateTime.Now)
+            var result = new StringBuilder();
+            result.AppendLine($"Kg per piece: {Weight:F2}");
+            result.AppendLine($"Total Value: {CalculateValue():F2}");
+            result.AppendLine($"Expiration date: {ExpirationDate.ToString("MM/dd/yyyy")}");
+            result.AppendLine($"Item ID: {Id}");
+
+            return base.GetDetails() + result;
+        }
+
+        public override string HandleExpiration()
+        {
+            if (ExpirationDate == DateTime.Now)
             {
-                base.HandleExpiration();
-                Quantity--;
-                Console.WriteLine($"Estimated loss: {(GetPrice() * (decimal)Weight):F2}");
-                Console.WriteLine($"Remaining {Quantity} X {Weight:F2} kg");
+                var result = new StringBuilder();
+                result.AppendLine($"\nExpired {Quantity} X {Weight:F2} kg of {Name}");                
+                result.AppendLine($"Estimated loss: {CalculateValue():F2}");
+
+                return base.HandleExpiration() + result;
             }
-            else
-            {
-                Console.WriteLine($"No expiration loss for item {Name}");
-            }
+
+            return $"No expiration loss for item {Name}";
         }
     }
 }

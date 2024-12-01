@@ -10,11 +10,11 @@
         private readonly int[] BreakableCategories = [2, 3];
 
         private string name;
-        private Category category;
-        private string description;
+        private readonly Category category;
+        private readonly string description;
         private decimal price;
-        private bool isBreakable;
-        private bool isPerishable;
+        private readonly bool isBreakable;
+        private readonly bool isPerishable;
 
         public string Name
         {
@@ -76,7 +76,7 @@
                 details.AppendLine("perishable");
             }
 
-            return details.ToString().TrimEnd();
+            return details.ToString();
         }
         public virtual decimal CalculateValue() => price;
         public void DisplayDescription() => Console.WriteLine(description);
@@ -99,6 +99,7 @@
             {
                 throw new ArgumentException("Invalid Price!");
             }
+
             this.price = price;
         }
 
@@ -109,33 +110,37 @@
             {
                 return true;
             }
+
             return false;
         }
-        public virtual void HandleBreakage()
+        public virtual string HandleBreakage()
         {
             if (isBreakable)
             {
-                Console.WriteLine($"A piece of item {Name} is broken.");
+                return $"A piece of item {Name} is broken.";
             }
+
+            return $"Item {Name} can not be broken.";
         }
 
         public bool IsPerishable()
-        {
+        {            
+            var category = GetCategory();
+            if (PerishableCategories.Contains((int)category))
             {
-                var category = GetCategory();
-                if (PerishableCategories.Contains((int)category))
-                {
-                    return true;
-                }
-                return false;
+                return true;
             }
+
+            return false;                       
         }
-        public virtual void HandleExpiration()
+        public virtual string HandleExpiration()
         {
             if (isPerishable)
             {
-                Console.WriteLine($"A piece of item {Name} perished.");
+               return $"Item {Name} expirated.";
             }
+
+            return $"No expiration loss for item {Name}.";
         }
     }
 }

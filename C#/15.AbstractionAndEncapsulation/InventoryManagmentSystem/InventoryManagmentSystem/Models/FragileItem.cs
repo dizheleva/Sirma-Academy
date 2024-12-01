@@ -1,18 +1,33 @@
 ﻿namespace InventoryManagmentSystem.Models
 {
+    using System.Text;
     using InventoryManagmentSystem.Models.Enums;
 
-    public class FragileItem(string id, int quantity, string name, string description, decimal price, double weight) 
-        : InventoryItem(id, quantity, name, SetCategory(category), description, price)
+    public class FragileItem : InventoryItem
     {
-        private const Category category = Category.Fragile;
-        public double Weight { get; set; } = weight;
-        public override decimal CalculateValue() => base.CalculateValue() * Quantity;
-        public override void HandleBreakage()
+        public FragileItem(string id, string name, string description, decimal price, int quantity, double weight)
+            : base(SetCategory(category), id, name, description, price, quantity)
         {
-            base.HandleBreakage();
+            Weight = weight;
+        }
+        private const Category category = Category.Fragile;
+        public double Weight { get; set; }
+        public override decimal CalculateValue() => base.CalculateValue() * Quantity;
+
+        public override string GetDetails()
+        {
+            var result = new StringBuilder();
+            result.AppendLine($"Kg per piece: {Weight:F2}");
+            result.AppendLine($"Total Value: {CalculateValue():F2}");
+            result.AppendLine($"Item ID: {Id}\n");
+
+            return base.GetDetails() + result;
+        }
+
+        public override string HandleBreakage()
+        {            
             Quantity--;
-            Console.WriteLine($"Remaining Quantity: {Quantity}");
+            return base.HandleBreakage() + $"\nRemaining Quantity: {Quantity}";
         }
     }
 }

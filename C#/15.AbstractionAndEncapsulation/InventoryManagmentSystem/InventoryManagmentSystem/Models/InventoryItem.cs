@@ -7,7 +7,7 @@
         private string id;
         private int quantity;
 
-        public InventoryItem(string id, int quantity, string name, Category category, string description, decimal price) 
+        public InventoryItem(Category category, string id, string name, string description, decimal price, int quantity) 
             : base(name, category, description, price)
         {
             Id = id;
@@ -38,5 +38,7 @@
                 quantity = value;
             }
         }
+
+        public override string GetDetails() => base.GetDetails();
     }
 }
