@@ -21,14 +21,8 @@
             Side = side;
         }
 
-        public override double GetArea()
-        {
-            return Math.Pow(Side, 2);
-        }
+        public override double GetArea() => Math.Pow(Side, 2);
 
-        public override double GetPerimeter()
-        {
-            return 4 * Side;
-        }
+        public override double GetPerimeter() => 4 * Side;
     }
 }

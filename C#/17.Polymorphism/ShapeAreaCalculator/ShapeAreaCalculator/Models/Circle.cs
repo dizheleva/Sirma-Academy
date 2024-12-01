@@ -22,14 +22,8 @@
             }
         }
 
-        public override double GetArea()
-        {
-            return Math.PI * Math.Pow(Radius, 2);
-        }
+        public override double GetArea() => Math.PI * Math.Pow(Radius, 2);
 
-        public override double GetPerimeter()
-        {
-            return 2 * Math.PI * Radius;
-        }
+        public override double GetPerimeter() => Math.PI * 2 * Radius;
     }
 }

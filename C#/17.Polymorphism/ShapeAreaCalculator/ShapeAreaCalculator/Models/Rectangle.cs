@@ -2,45 +2,39 @@
 {
     internal class Rectangle : Shape
     {
-        private double width;
-        private double height;
+        private double sideA;
+        private double sideB;
 
-        public double Width
+        public double SideA
         {
-            get => width;
+            get => sideA;
 
             private set
             {
-                ValidateSide(value, nameof(Width));
-                width = value;
+                ValidateSide(value, nameof(SideA));
+                sideA = value;
             }
         }
-        public double Height
+        public double SideB
         {
-            get => height;
+            get => sideB;
 
             private set
             {
-                ValidateSide(value, nameof(Height));
-                height = value;
+                ValidateSide(value, nameof(SideB));
+                sideB = value;
             }
         }
 
-        public Rectangle(double height, double width)
+        public Rectangle(double sideA, double sideB)
         {
-            Width = width;
-            Height = height;
+            SideA = sideA;
+            SideB = sideB;
         }
 
 
-        public override double GetArea()
-        {
-            return Width * Height;
-        }
+        public override double GetArea() => SideA * SideB;
 
-        public override double GetPerimeter()
-        {
-            return (Width + Height) * 2; 
-        }
+        public override double GetPerimeter() => (SideA + SideB) * 2;
     }
 }
