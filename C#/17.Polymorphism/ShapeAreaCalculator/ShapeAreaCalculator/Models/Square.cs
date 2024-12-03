@@ -1,6 +1,7 @@
 ﻿namespace ShapeAreaCalculator.Models
 {
     using System;
+    using System.Text.Json.Serialization;
 
     public class Square : Shape
     {
@@ -16,6 +17,7 @@
             }
         }
 
+        [JsonConstructorAttribute]
         public Square(double side)
         {
             Side = side;

@@ -1,6 +1,7 @@
 ﻿namespace ShapeAreaCalculator.Models
 {
     using System;
+    using System.Text.Json.Serialization;
 
     public class RegularPolygon : Shape
     {
@@ -29,15 +30,16 @@
             }
         }
 
-
+        [JsonConstructorAttribute]
         public RegularPolygon(int sidesCount, double side)
         {
+            ValidatePolygon(sidesCount);
             SidesCount = sidesCount;
             Side = side;
         }
         public override double GetArea()
         {
-            return Side * Side * SidesCount / (4 * Math.Tan(180 / SidesCount));
+            return (Side * Side * SidesCount) / (4 * Math.Tan(Math.PI / SidesCount));
         }
         public override double GetPerimeter() => Side * SidesCount;
 
@@ -46,6 +48,14 @@
             if (sidesCount < 3)
             {
                 throw new Exception(string.Format($"Invalid sides count!"));
+            }
+        }
+
+        public static void ValidatePolygon(int sidesCount)
+        {
+            if (Math.Tan(Math.PI / sidesCount) <= 0)
+            {
+                throw new Exception("Invalid Plygon!");
             }
         }
     }

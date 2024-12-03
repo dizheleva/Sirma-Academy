@@ -1,5 +1,7 @@
 ﻿namespace ShapeAreaCalculator.Models
 {
+    using System.Text.Json.Serialization;
+
     internal class Rectangle : Shape
     {
         private double sideA;
@@ -26,6 +28,7 @@
             }
         }
 
+        [JsonConstructorAttribute]
         public Rectangle(double sideA, double sideB)
         {
             SideA = sideA;

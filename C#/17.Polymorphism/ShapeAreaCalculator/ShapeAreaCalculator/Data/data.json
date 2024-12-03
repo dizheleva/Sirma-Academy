@@ -1,0 +1,111 @@
+[
+  {
+    "Radius": 5,
+    "Type": "Circle"
+  },
+  {
+    "SideA": 4,
+    "SideB": 6,
+    "Type": "Rectangle"
+  },
+  {
+    "SideA": 5,
+    "SideB": 8,
+    "SideC": 4,
+    "Type": "Triangle"
+  },
+  {
+    "Radius": 6.7,
+    "Type": "Circle"
+  },
+  {
+    "SideA": 2,
+    "SideB": 6,
+    "Type": "Rectangle"
+  },
+  {
+    "SideA": 6,
+    "SideB": 4,
+    "SideC": 4,
+    "Type": "Triangle"
+  },
+  {
+    "Radius": 7,
+    "Type": "Circle"
+  },
+  {
+    "SideA": 5,
+    "SideB": 10,
+    "Type": "Rectangle"
+  },
+  {
+    "SideA": 7,
+    "SideB": 8,
+    "SideC": 3,
+    "Type": "Triangle"
+  },
+  {
+    "Radius": 7.8,
+    "Type": "Circle"
+  },
+  {
+    "SideA": 4,
+    "SideB": 5,
+    "Type": "Rectangle"
+  },
+  {
+    "SideA": 13,
+    "SideB": 8,
+    "SideC": 12,
+    "SideD": 8,
+    "Type": "Trapezoid"
+  },
+  {
+    "SideA": 12,
+    "SideB": 9,
+    "SideC": 6,
+    "SideD": 8,
+    "Type": "Trapezoid"
+  },
+  {
+    "SideA": 11,
+    "SideB": 7.5,
+    "SideC": 7,
+    "SideD": 6,
+    "Type": "Trapezoid"
+  },
+  {
+    "SideA": 7,
+    "SideB": 5,
+    "SideC": 9,
+    "SideD": 10,
+    "Type": "Trapezoid"
+  },
+  {
+    "SideA": 17,
+    "SideB": 8,
+    "SideC": 13,
+    "SideD": 8,
+    "Type": "Trapezoid"
+  },
+  {
+    "SidesCount": 5,
+    "Side": 4.7,
+    "Type": "RegularPolygon"
+  },
+  {
+    "SidesCount": 6,
+    "Side": 6,
+    "Type": "RegularPolygon"
+  },
+  {
+    "SidesCount": 7,
+    "Side": 5,
+    "Type": "RegularPolygon"
+  },
+  {
+    "SidesCount": 5,
+    "Side": 2,
+    "Type": "RegularPolygon"
+  }
+]

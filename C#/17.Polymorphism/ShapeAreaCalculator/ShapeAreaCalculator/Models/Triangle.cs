@@ -1,5 +1,7 @@
 ﻿namespace ShapeAreaCalculator.Models
 {
+    using System.Text.Json.Serialization;
+
     public class Triangle : Shape
     {
         private double sideA;
@@ -39,8 +41,10 @@
             }
         }
 
+        [JsonConstructorAttribute]
         public Triangle(double sideA, double sideB, double sideC)
         {
+            ValidateTriangle(sideA, sideB, sideC);
             SideA = sideA;
             SideB = sideB;
             SideC = sideC;
@@ -55,5 +59,13 @@
         }
 
         public override double GetPerimeter() => SideA + SideB + SideC;
+
+        public static void ValidateTriangle(double a, double b, double c)
+        {
+            if (a + b <= c || a + c <= b || b + c <= a)
+            {
+                throw new Exception("Invalid triangle!");
+            }
+        }
     }
 }

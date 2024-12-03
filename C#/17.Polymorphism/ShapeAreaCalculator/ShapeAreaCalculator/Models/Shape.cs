@@ -2,16 +2,24 @@
 {
     public abstract class Shape
     {
+        public string Type { get; set; }
+
+        protected Shape()
+        {
+            Type = GetType().Name;
+        }
         public abstract double GetArea();
 
         public abstract double GetPerimeter();
 
-        public static void ValidateSide(double sideValue, string sideName)
+        public static double ValidateSide(double sideValue, string sideName)
         {
             if (sideValue <= 0)
             {
                 throw new Exception(string.Format($"Invalid {sideName}!"));
             }
+
+            return sideValue;
         }
 
         public override string ToString()

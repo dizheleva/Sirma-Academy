@@ -1,11 +1,13 @@
 ﻿namespace ShapeAreaCalculator.Models
 {
     using System;
+    using System.Text.Json.Serialization;
 
     public class Circle : Shape
     {
         private double radius;
 
+        [JsonConstructorAttribute]
         public Circle(double radius)
         {
             Radius = radius;
