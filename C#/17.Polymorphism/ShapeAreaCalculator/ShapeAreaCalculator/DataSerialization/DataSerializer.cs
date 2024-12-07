@@ -1,4 +1,4 @@
-﻿namespace ShapeAreaCalculator
+﻿namespace ShapeAreaCalculator.DataSerialization
 {
     using System.Collections.Generic;
     using System.Text.Json;
@@ -22,7 +22,7 @@
             try
             {
                 reader = new StreamReader(filePath);
-                var fileContent = reader.ReadToEnd();                
+                var fileContent = reader.ReadToEnd();
                 var deserialized = JsonSerializer.Deserialize<List<Shape>>(fileContent, options);
 
                 return deserialized;
@@ -43,7 +43,7 @@
             try
             {
                 var jsonText = JsonSerializer.Serialize(shapes, options);
-                writer = new StreamWriter(filePath);                
+                writer = new StreamWriter(filePath);
                 writer.Write(jsonText);
             }
             catch (IOException)
@@ -58,8 +58,8 @@
 
         public static string GetIOPath(string folderName, string fileName)
         {
-            string projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
-            string folderFullName = Path.Combine(projectPath, folderName);
+            var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            var folderFullName = Path.Combine(projectPath, folderName);
             Directory.CreateDirectory(folderFullName);
 
             return Path.Combine(folderFullName, fileName);

@@ -1,4 +1,4 @@
-﻿namespace ShapeAreaCalculator
+﻿namespace ShapeAreaCalculator.DataSerialization
 {
     using System;
     using System.Text.Json;
@@ -9,9 +9,9 @@
     {
         public override Shape Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-            using JsonDocument doc = JsonDocument.ParseValue(ref reader);
-            JsonElement root = doc.RootElement;
-            string type = root.GetProperty("Type").GetString();
+            using var doc = JsonDocument.ParseValue(ref reader);
+            var root = doc.RootElement;
+            var type = root.GetProperty("Type").GetString();
 
             return type switch
             {

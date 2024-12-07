@@ -1,13 +1,12 @@
-﻿using System.Globalization;
-using System.Text.Json;
-using ShapeAreaCalculator;
+﻿using ShapeAreaCalculator.DataSerialization;
 using ShapeAreaCalculator.Models;
+using ShapeAreaCalculator.UserMenu;
 using Rectangle = ShapeAreaCalculator.Models.Rectangle;
 
 internal class Program
 {
     private static void Main(string[] args)
-    {        
+    {
         //List<Shape> shapes = new List<Shape>()
         //{
         //    new Circle(5),
@@ -31,9 +30,8 @@ internal class Program
         //    new RegularPolygon(7, 5),
         //};
 
-        //FileIO.SaveData(shapes);
+        //DataSerializer.SaveData(shapes);
 
-        ShapesContext.LoadData();
-        ConsoleMenu.Run();
+        Menu.Run();
     }
 }

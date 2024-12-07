@@ -1,12 +1,12 @@
-﻿namespace ShapeAreaCalculator
+﻿namespace ShapeAreaCalculator.UserMenu
 {
     using System;
     using ShapeAreaCalculator.Enums;
     using ShapeAreaCalculator.Models;
 
-    public class ConsoleMenu
+    public class Menu
     {
-        public static void Run()
+       public static void Run()
         {
             while (true)
             {
@@ -25,7 +25,7 @@
 
                     case 3:
                         RemoveShape();
-                        break;                    
+                        break;
 
                     case 4:
                         Console.Write("Are you sure you want to exit? (Y/N): ");
@@ -36,7 +36,7 @@
                         if (confirmation == 'Y')
                         {
                             Console.WriteLine("Exiting...");
-                            return; // Exit the Main method
+                            return;
                         }
 
                         Console.Clear();
@@ -52,24 +52,18 @@
                 Console.Clear(); // Clear the console for the next iteration
             }
         }
-                
+
         private static Shape GetShape()
         {
             DisplayShapes();
-            Console.Write("\nEnter shape number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine();
-
-            if (number <= 0 || number > ShapesContext.Shapes.Count)
-            {
-                Console.WriteLine("No shape found!");
-                return null;
-            }
-
-            var shape = ShapesContext.Shapes[number - 1];            
+            Console.Write("Enter shape number: ");
+            var number = Convert.ToInt32(Console.ReadLine());
+            var shape = ShapesRepository.Find(number - 1);
 
             Console.WriteLine("Shape chosen:");
+            Console.WriteLine();
             Console.WriteLine(shape.ToString());
+            Console.WriteLine();
 
             return shape;
         }
@@ -83,15 +77,13 @@
 
             Console.Write($"Remove {shape.Type} from the list? (Y/N): ");
             var confirmation = Console.ReadLine().ToUpper()[0];
-            Console.WriteLine();
 
             if (confirmation != 'Y')
             {
-                return; 
+                return;
             }
 
-            ShapesContext.Shapes.Remove(shape);
-            ShapesContext.SaveChanges();
+            ShapesRepository.Remove(shape);
             Console.WriteLine("Shape removed!");
         }
 
@@ -101,83 +93,81 @@
             DisplayShapeTypes();
 
             Console.Write("Enter shape type selection: ");
-            ShapeType shapeType = (ShapeType)Convert.ToInt32(Console.ReadLine());
+            var shapeType = (ShapeType)Convert.ToInt32(Console.ReadLine());
 
             Shape shape = null;
-            
+
             switch ((int)shapeType)
             {
                 case 1:
                     Console.Write("Enter Radius: ");
-                    double radius = Convert.ToDouble(Console.ReadLine());
+                    var radius = Convert.ToDouble(Console.ReadLine());
 
                     shape = new Circle(radius);
                     break;
 
                 case 2:
                     Console.Write("Enter Side A: ");
-                    double triangleA = Convert.ToDouble(Console.ReadLine());
+                    var triangleA = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter Side B: ");
-                    double triangleB = Convert.ToDouble(Console.ReadLine());
+                    var triangleB = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter Side C: ");
-                    double triangleC = Convert.ToDouble(Console.ReadLine());
+                    var triangleC = Convert.ToDouble(Console.ReadLine());
 
                     shape = new Triangle(triangleA, triangleB, triangleC);
                     break;
 
                 case 3:
                     Console.Write("Enter Side: ");
-                    double squareSide = Convert.ToDouble(Console.ReadLine());
+                    var squareSide = Convert.ToDouble(Console.ReadLine());
 
                     shape = new Square(squareSide);
                     break;
 
                 case 4:
                     Console.Write("Enter Side A: ");
-                    double recA = Convert.ToDouble(Console.ReadLine());
+                    var recA = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter Side B: ");
-                    double recB = Convert.ToDouble(Console.ReadLine());
+                    var recB = Convert.ToDouble(Console.ReadLine());
 
-                    shape = new Rectangle(recA, recB); 
+                    shape = new Rectangle(recA, recB);
                     break;
 
                 case 5:
                     Console.Write("Start entering values from the longest parallel side.");
                     Console.Write("Enter Side A: ");
-                    double trapezoidA = Convert.ToDouble(Console.ReadLine());
+                    var trapezoidA = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter Side B: ");
-                    double trapezoidB = Convert.ToDouble(Console.ReadLine());
+                    var trapezoidB = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter Side C: ");
-                    double trapezoidC = Convert.ToDouble(Console.ReadLine());
+                    var trapezoidC = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter Side D: ");
-                    double trapezoidD = Convert.ToDouble(Console.ReadLine());
+                    var trapezoidD = Convert.ToDouble(Console.ReadLine());
 
                     shape = new Trapezoid(trapezoidA, trapezoidB, trapezoidC, trapezoidD);
                     break;
 
                 case 6:
                     Console.Write("Enter Sides Count: ");
-                    int count = Convert.ToInt32(Console.ReadLine());
+                    var count = Convert.ToInt32(Console.ReadLine());
                     Console.Write("Enter Side: ");
-                    double polySide = Convert.ToDouble(Console.ReadLine());
+                    var polySide = Convert.ToDouble(Console.ReadLine());
 
                     shape = new RegularPolygon(count, polySide);
                     break;
             }
 
-            ShapesContext.Shapes.Add(shape);
-            ShapesContext.SaveChanges();
-
-            Console.WriteLine($"New shape {shape.Type} added.");
+            ShapesRepository.Add(shape);
+            Console.WriteLine($"New {shape.Type} added.");
         }
 
         private static void DisplayShapes()
         {
-            Console.WriteLine("\n*********** Shapes ************\n");
+            Console.WriteLine("\n************ Shapes *************\n");
 
-            for (var i = 0; i < ShapesContext.Shapes.Count; i++)
+            for (var i = 0; i < ShapesRepository.Count; i++)
             {
-                var shape = ShapesContext.Shapes[i];
+                var shape = ShapesRepository.Find(i);
                 Console.WriteLine($"[{i + 1}] " + shape.ToString());
                 Console.WriteLine();
             }
