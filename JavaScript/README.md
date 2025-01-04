@@ -6,7 +6,7 @@
 ---
 ### **Entry Module:**
 ---
-### 1. [Basic Syntax](01.Basic-Syntax)
+### 1.  [Basic Syntax](01.Basic-Syntax)
 ### 2.	[Conditional Statements](02.Conditional-Statements)
 ### 3.	[Loops](03.Loops)
 ### 4.	[Arrays](04.Arrays)
@@ -25,25 +25,19 @@
 ### 13. [Advanced Functions](13.Advanced-Functions)
 ### 14. [Object & Composition](14.Objects-and-Composition)
 ### 15. [Prototype and Inheritance](15.Prototype-and-Inheritance)
-### 16. Workshop
-### 17. Events & Promises
-### 18. Async
-### 19. DOM Introduction
-### 20. DOM Workshop
-### 21. DOM Workshop
-### 22. Design Patterns
-### 23. Design Patterns Advanced
-### 24. HTTP, REST & Ajax
+### 16. [DOM Introduction](16.DOM-Introduction)
+### 17-18. [DOM Workshop](17-18.DOM-Events-Workshop)
+### 19-21. [Asynchronous Programming](19-21.Async-Programming-Workshop)
+### 22-23. [Design Patterns](22-23.Design-Patterns-Workshop)
+### 24. [HTTP, REST & Ajax](24.HTTP-REST-Ajax)
 ---
 ###     **HTML & CSS:**
 ---
-### 25.	HTML & CSS Intro
-### 26. CSS Selectors
-### 27. Flexbox
-### 28. Flexbox
-### 29. Grid
-### 30. Grid
-### 31. Media Queries
+### 25.	[HTML & CSS Intro](25.HTML-CSS)
+### 26. [CSS Selectors](26.CSS-Selectors)
+### 27-28. [Flexbox](27-28.Flexbox)
+### 29-30. [Grid](29-30.CSS-Grid)
+### 31. [Media Queries](31.Media-Queries)
 ### 32. Responsive Design
 ### 33. Workshop
 ### 34. DOM Manipulations
