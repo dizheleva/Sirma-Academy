@@ -4,7 +4,7 @@
     {
         public double CalculateDiscount(User user, double price)
         {
-            return price += user.GetDiscount() * price;
+            return price -= user.GetDiscount() * price;
         }
     }
 }
