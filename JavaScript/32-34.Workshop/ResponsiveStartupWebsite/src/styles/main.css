@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #74C69D;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #212529;
+
+    --primary-color-75: #74C69D75;
+    --primary-color-50: #74C69D50;
+    --primary-color-25: #74C69D25;
+
+    --secondary-color-75: #FFFFFF75;
+    --secondary-color-50: #FFFFFF50;
+    --secondary-color-25: #FFFFFF25;
+
+    --tertiary-color-75: #21252975;
+    --tertiary-color-50: #21252950;
+    --tertiary-color-25: #21252925;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong {
+    font-weight: normal;
+}
+
+.site-content {    
+    width: 1180px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    margin: 16px 0;
+}
+
+h4 {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    margin: 16px 0;
+}
+
+.label {
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.sub-heading {
+    font-size: 1.25rem;
+    line-height: 125%;
+}
+
+.body {
+    font-size: 0.9375rem;  
+}
+
+button {    
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 13px 49px 10px;
+}
+
+.secondary-button {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 13px 30px 10px;
+    text-transform: capitalize
+}
+
+img {
+    width: 100%;
+}
+
+header, footer {
+    padding: 35px 0 37px;
+    background-color: var(--primary-color);
+}
+
+.header-container, .footer-container {
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
