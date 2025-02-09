@@ -1,125 +1,118 @@
 :root {
-    --primary-color: rgb(116, 198, 157);
-    --secondary-color: rgb(255, 255, 255);
-    --tertiary-color: rgb(33, 37, 41);
+	--primary-color: rgb(116, 198, 157);
+	--secondary-color: rgb(255, 255, 255);
+	--tertiary-color: rgb(33, 37, 41);
 
-    --primary-color-75: rgba(116, 198, 157, 0.75);
-    --primary-color-50: rgba(116, 198, 157, 0.5);
-    --primary-color-25: rgba(116, 198, 157, 0.25);
+	--primary-color-75: rgba(116, 198, 157, 0.75);
+	--primary-color-50: rgba(116, 198, 157, 0.5);
+	--primary-color-25: rgba(116, 198, 157, 0.25);
 
-    --secondary-color-75: rgba(255, 255, 255, 0.75);
-    --secondary-color-50: rgba(255, 255, 255, 0.5);
-    --secondary-color-25: rgba(255, 255, 255, 0.25);
+	--secondary-color-75: rgba(255, 255, 255, 0.75);
+	--secondary-color-50: rgba(255, 255, 255, 0.5);
+	--secondary-color-25: rgba(255, 255, 255, 0.25);
 
-    --tertiary-color-75: rgba(33, 37, 41, 0.75);
-    --tertiary-color-50: rgba(33, 37, 41, 0.5);
-    --tertiary-color-25: rgba(33, 37, 41, 0.25);
+	--tertiary-color-75: rgba(33, 37, 41, 0.75);
+	--tertiary-color-50: rgba(33, 37, 41, 0.5);
+	--tertiary-color-25: rgba(33, 37, 41, 0.25);
 
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
-    line-height: 125%;
+	font-family: "Work Sans", sans-serif;
+	font-size: 16px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 125%;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
-strong {
-    font-weight: normal;
-}
-
-.site-content {    
-    width: 1180px;
-    margin: 0 auto;
+.site-content {
+	max-width: 1180px;
+	margin: 0 auto;
 }
 
 h1 {
-    font-family: 'Crimson Text', serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 125%;
-    margin: 16px 0;
+	font-family: "Crimson Text", serif;
+	font-size: 2.5rem;
+	font-weight: 700;
 }
 
 h4 {
-    font-family: 'Crimson Text', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 125%;
-    margin: 16px 0;
+	font-family: "Crimson Text", serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 17px;
 }
 
 h5 {
-    font-family: 'Crimson Text', serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 125%;
-    margin: 16px 0;
+	font-family: "Crimson Text", serif;
+	font-size: 1.25rem;
+	font-weight: 700;
 }
 
 .label {
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: var(--primary-color);
-    margin: 0;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	margin-bottom: 16px;
 }
 
 .sub-heading {
-    font-size: 1.25rem;
-    line-height: 125%;
+	font-size: 1.25rem;	
 }
 
-.body {
-    font-size: 0.9375rem;  
+.body-text {	
+	font-size: 0.9375rem;
 }
 
-button {    
-    font-family: inherit;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+button {
+	font-family: inherit;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .primary-button {
-    background-color: var(--secondary-color);
-    color: black;
-    padding: 13px 49px 10px;
+	background-color: var(--secondary-color);
+	color: black;
+	padding: 13px 49px 10px;	
+	text-transform: capitalize;
 }
 
 .secondary-button {
-    background-color: var(--tertiary-color);
-    color: var(--secondary-color);
-    padding: 13px 30px 10px;
-    text-transform: capitalize
+	background-color: var(--tertiary-color);
+	color: var(--secondary-color);
+	padding: 13px 30px 10px;
+	text-transform: capitalize;
 }
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
-header, footer {
-    padding: 35px 0 37px 5px;
-    background-color: var(--primary-color);
+header,
+footer {
+	padding: 35px 0 37px 5px;
+	background-color: var(--primary-color);
 }
 
-.header-container, .footer-container {
-    color: var(--secondary-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.header-content,
+.footer-content {
+	color: var(--secondary-color);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
