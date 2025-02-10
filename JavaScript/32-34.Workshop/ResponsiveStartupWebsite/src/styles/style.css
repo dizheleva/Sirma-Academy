@@ -463,8 +463,12 @@ header .info-container {
 		grid-template-columns: 1fr;
 	}
 
-	.more-section {
-		margin-bottom: 30px;
+	.map-container {
+		order: 1;
+	}
+
+	.contact-container form {
+		order: 2;
 	}
 
 	.footer-content {
@@ -492,6 +496,65 @@ header .info-container {
 
 	header .info-container {
 		margin-top: 32px;
-		margin-bottom: 42px;
+		margin-bottom: 0;
+	}
+
+	.header-title {
+		font-size: 28px;
+		margin: 15px 0;
+	}
+
+	header {
+		padding: 21px 0;
+		margin-bottom: 22px;
+	}
+
+	.section-top h1 {
+		font-size: 24px;
+		margin: 16px 0;
+	}
+
+	.info-content h1 {
+		font-size: 24px;
+	}
+
+	.info-content .body-text {
+		margin: 20px 0;
+	}
+
+	.info-section {
+		gap: 60px;
+	}
+
+	.portfolio-section {
+		gap: 0;
+		margin-bottom: 30px;
+	}
+
+	.gallery {
+		gap: 55px;
+		margin-bottom: 28px;
+	}
+
+	.services-section {
+		gap: 46px;
+		margin-bottom: 68px;
+	}
+
+	.contact-section {
+		gap: 45px;
+		margin-bottom: 59px;
+	}
+
+	.contact-container {
+		gap: 21px;
+	}
+
+	#message {
+		margin-bottom: 30px;
+	}
+
+	footer {
+		padding: 31px 0;
 	}
 }

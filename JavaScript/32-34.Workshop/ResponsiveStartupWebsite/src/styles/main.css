@@ -70,10 +70,10 @@ h5 {
 }
 
 .sub-heading {
-	font-size: 1.25rem;	
+	font-size: 1.25rem;
 }
 
-.body-text {	
+.body-text {
 	font-size: 0.9375rem;
 }
 
@@ -87,7 +87,7 @@ button {
 .primary-button {
 	background-color: var(--secondary-color);
 	color: black;
-	padding: 13px 49px 10px;	
+	padding: 13px 49px 10px;
 	text-transform: capitalize;
 }
 
