@@ -26,20 +26,17 @@ nav ul {
 	justify-content: space-between;
 }
 
-.info-container {	
+.info-container {
+	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
 header .info-container {
-	margin-top: 40px;	
+	margin-top: 40px;
 	margin-bottom: 42px;
-}
-
-.info-content {
-	width: 415px;
 }
 
 .info-content .label {
@@ -51,17 +48,30 @@ header .info-container {
 	margin-bottom: 25px;
 }
 
+.info-container-image img {
+	width: 45vw;
+	height: auto;
+}
+
 /* Main */
+
+.partners-section,
+.info-section,
+.team-section,
+.portfolio-section,
+.services-section,
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 /* Home page */
 
 .partners-section {
 	margin: 60px 10px 72px;
-	display: flex;
-	flex-direction: column;
 	gap: 55px;
-	justify-content: center;
-	align-items: center;
 }
 
 .section-top {
@@ -81,7 +91,7 @@ header .info-container {
 .links {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
+	gap: 40px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -93,8 +103,6 @@ header .info-container {
 }
 
 .info-section {
-	display: flex;
-	flex-direction: column;
 	gap: 72px;
 	margin-bottom: 100px;
 }
@@ -110,7 +118,7 @@ header .info-container {
 
 .mission .info-content,
 .solution .info-content {
-	width: 470px;
+	width: 30vw;
 	margin-bottom: 15px;
 }
 
@@ -123,25 +131,22 @@ header .info-container {
 }
 
 .team-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin-bottom: 54px;
 }
 
 .team-cards {
 	width: 100%;
 	display: flex;
+	gap: 35px;
 	justify-content: space-between;
 	margin: 45px 0;
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
-	width: 252px;
-	height: 299px;
+	max-width: 279px;
+	min-width: 252px;
+	width: auto;
+	height: auto;
 	padding: 20px 25px 0;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -151,7 +156,7 @@ header .info-container {
 .card img {
 	width: 175px;
 	height: 175px;
-	padding: 0 auto;
+	margin: 0 auto;
 }
 
 .card:hover {
@@ -171,26 +176,23 @@ header .info-container {
 
 .portfolio-section {
 	margin-bottom: 100px;
-	display: flex;
-	flex-direction: column;
 	gap: 40px;
-	justify-content: center;
-	align-items: center;
 }
 
-.portfolio-section .top {
+.portfolio-section .section-top {
 	margin-bottom: 32px;
 }
 
-.portfolio-section .top .label {
+.portfolio-section .section-top .label {
 	color: var(--primary-color);
 }
 
-.gallery-section {
+.gallery {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 570fr 555fr;
 	gap: 40px;
+	margin-bottom: 25px;
 }
 
 .work-card {
@@ -208,20 +210,17 @@ header .info-container {
 /* Services page */
 
 .services-section {
-	width: 1227px;
-	margin: 0 auto;
+	max-width: 1227px;
 	padding-top: 5px;
-	display: flex;
-	flex-direction: column;
 	gap: 65px;
-	justify-content: center;
-	align-items: center;
 	margin-bottom: 135px;
 }
 
 .service-cards {
 	width: 100%;
 	display: flex;
+	gap: 40px;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -290,11 +289,7 @@ header .info-container {
 /* Contact page*/
 
 .contact-section {
-	display: flex;
-	flex-direction: column;
 	gap: 55px;
-	justify-content: center;
-	align-items: center;
 	margin-bottom: 93px;
 }
 
@@ -310,7 +305,7 @@ header .info-container {
 	justify-content: space-between;
 }
 
-.contact-container forms {
+.contact-container form {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
@@ -322,7 +317,7 @@ header .info-container {
 
 .contact-container form {
 	flex: 1;
-	max-width: 575px;
+	width: 575px;
 }
 
 .contact-container form input,
@@ -364,36 +359,74 @@ header .info-container {
 }
 
 /* Footer */
-
-footer {
-	padding: 35px 1px 37px 1px;
+.footer-content {
+	padding: 0 1px;
 }
-
 .footer-social {
 	display: flex;
 	gap: 22px;
 	font-size: 18px;
 }
 
-@media (max-width: 1200px) {
-	.site-content {
-		width: 900x;
+@media (max-width: 1280px) {
+	.links,
+	.team-cards,
+	.service-cards {
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 }
 
 @media (max-width: 1024px) {
 	.site-content {
-		width: 700px;
+		width: 635px;
+	}
+
+	.links {
+		row-gap: 40px;
+		justify-content: space-around;
+	}
+
+	.info-section {
+		margin-bottom: 40px;
+	}
+
+	.info-container,
+	.contact-container {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.info-container-image img,
+	.contact-container form {
+		width: 100%;
+	}
+
+	.info-container-image {
+		order: 1;
+	}
+
+	.header-content .info-content,
+	.mission .info-content,
+	.solution .info-content {
+		width: 100%;
+		order: 2;
+	}
+
+	.team-cards {
+		flex-wrap: wrap;
+		row-gap: 35px;
+	}
+
+	.service-cards {
+		justify-content: center;
+		gap: 40px;
 	}
 }
 
 @media (max-width: 768px) {
 	.site-content {
-		width: 500px;
-	}
-
-	.logo-container {
-		justify-content: space-between;
+		width: 540px;
 	}
 
 	.logo img {
@@ -408,12 +441,8 @@ footer {
 		display: block;
 	}
 
-	nav {
+	nav ul {
 		display: none;
-	}
-
-	.hero {
-		width: 100%;
 	}
 
 	.partners-section {
@@ -430,7 +459,39 @@ footer {
 		margin-bottom: 30px;
 	}
 
+	.gallery {
+		grid-template-columns: 1fr;
+	}
+
 	.more-section {
 		margin-bottom: 30px;
+	}
+
+	.footer-content {
+		justify-content: center;
+		row-gap: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.section-top {
+		width: 100%;
+	}
+
+	.logo-container {
+		gap: 3.5px;
+	}
+
+	.logo-container img {
+		width: 45px;
+	}
+
+	.logo {
+		font-size: 30px;
+	}
+
+	header .info-container {
+		margin-top: 32px;
+		margin-bottom: 42px;
 	}
 }
