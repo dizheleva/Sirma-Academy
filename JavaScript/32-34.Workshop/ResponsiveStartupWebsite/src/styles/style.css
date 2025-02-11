@@ -19,7 +19,7 @@ header {
 	display: none;
 }
 
-nav ul {
+header nav ul {
 	width: 100%;
 	display: flex;
 	gap: 30px;
@@ -391,26 +391,23 @@ header .info-container {
 		margin-bottom: 40px;
 	}
 
+	.mission .info-container-image,
+	.mission .info-content {
+		order: initial;
+	}
+
 	.info-container,
 	.contact-container {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		gap: 30px;
 	}
 
 	.info-container-image img,
-	.contact-container form {
-		width: 100%;
-	}
-
-	.info-container-image {
-		order: 1;
-	}
-
+	.contact-container form,
 	.header-content .info-content,
 	.mission .info-content,
 	.solution .info-content {
 		width: 100%;
-		order: 2;
 	}
 
 	.team-cards {
@@ -437,9 +434,60 @@ header .info-container {
 		font-size: 1.9rem;
 	}
 
+	/* Burger Menu Icon */
 	.burger-menu {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		z-index: 1000;
 	}
+
+	.burger-menu div {
+		width: 25px;
+		height: 2px;
+		background-color: #fff;
+		margin: 4px 0;
+		transition: all 0.3s ease;
+	}
+
+	/* Navigation Links */
+	.nav-links {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: 200px;
+		background-color: var(--primary-color);
+		border: 1px solid var(--secondary-color-75);
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in-out;
+		padding-top: 100px;
+		padding-left: 40px;
+	}
+
+	.nav-links ul {
+		flex-direction: column;
+	}
+
+	/* Active Class for Toggle */
+	.nav-links {
+		transform: translateX(0);
+	}
+
+	/* Burger Menu Animation */
+	.toggle .line1 {
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+
+	.toggle .line2 {
+		opacity: 0;
+	}
+
+	.toggle .line3 {
+		transform: rotate(45deg) translate(-5px, -6px);
+	}
+
+
 
 	nav ul {
 		display: none;
