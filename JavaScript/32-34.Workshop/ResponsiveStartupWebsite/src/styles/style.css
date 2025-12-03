@@ -455,20 +455,25 @@ header .info-container {
 	}
 
 	/* Navigation Links */
-	
-
 	nav {
-        display: none;
-        opacity: 0;
-    }
+		display: none;
+		width: 100%;
+		order: 3;
+		margin-top: 20px;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
 
 	nav ul {
 		flex-direction: column;
+		width: 100%;
+		gap: 0;
 	}
 
 	/* Active Class for Toggle */
 	.nav-active {
-		display: block;
+		display: block !important;
+		opacity: 1 !important;
 	}
 
 	nav li:not(li:first-child) {
@@ -476,7 +481,7 @@ header .info-container {
     }
 
     nav li:not(li:last-child) {
-        border-bottom: 1px solid var(--white-color-50);
+        border-bottom: 1px solid var(--secondary-color-50);
         padding-bottom: 15px;
     }
 
